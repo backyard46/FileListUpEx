@@ -1,4 +1,3 @@
-
 Imports System.IO
 Imports System.Text
 
@@ -91,8 +90,8 @@ Public Class MainClass
     ''' <returns></returns>
     ''' <history>
     ''' [backyarD]	2007/08/16	Created
-    ''' [backyarD]    2007/10/02  FilePropertyCheckerのソースから移植。
-    ''' [backyarD]    2008/04/02  全ファイル対象バージョンへの改造に伴い、対象ファイル名
+    ''' [backyarD]  2007/10/02  FilePropertyCheckerのソースから移植。
+    ''' [backyarD]  2008/04/02  全ファイル対象バージョンへの改造に伴い、対象ファイル名
     ''' に関する引数を除去。
     ''' </history>
     Private Shared Function ListUpFileNames(ByVal TargetDirectory As DirectoryInfo) As ArrayList
@@ -121,9 +120,9 @@ Public Class MainClass
     ''' <returns></returns>
     ''' <history>
     ''' [backyarD]	2007/08/16	Created
-    ''' [backyarD]    2007/10/02  FilePropertyCheckerのソースから移植。
+    ''' [backyarD]  2007/10/02  FilePropertyCheckerのソースから移植。
     ''' 拡張子指定を取り除く。特定ファイル名のフルパスだけ抽出するよう改造。
-    ''' [backyarD]    2008/04/02  さらに全ファイル取得バージョンに改造。ファイル名条件、引数を除去。
+    ''' [backyarD]  2008/04/02  さらに全ファイル取得バージョンに改造。ファイル名条件、引数を除去。
     ''' </history>
     Private Shared Function ListUpFileInDir(ByVal TargetDirectory As DirectoryInfo) As ArrayList
 
