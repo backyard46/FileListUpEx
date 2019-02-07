@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<doc>
+  <assembly>
+    <name>FileListUpEx</name>
+    <version>1.0.0.0</version>
+    <fullname>FileListUpEx, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</fullname>
+  </assembly>
+  <members>
+    <member name="T:.MainClass">
+      <summary>
+ 主処理。 
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[yamane]	2007/10/02	Created 
+     [yamane]    2008/04/02  MakeFullPathListをベースに、ファイル名に関する条件 
+                             を除去、全ファイル情報取得アプリに改造。 
+ </history></member>
+    <member name="M:.MainClass.Main(System.String[])">
+      <summary>
+ 主処理 
+ </summary>
+ <param name="CmdArgs" />
+ <remarks>
+ </remarks>
+ <history>
+ 	[yamane]	2007/10/02	Created 
+     [yamane]    2008/04/02  対象ファイル名に関する指定処理を除去。 
+ </history></member>
+    <member name="M:.MainClass.WriteFileList(System.Collections.ArrayList,System.String)">
+      <summary>
+ ファイル名が納められたArrayListの内容を、指定したファイルに書き出す。 
+ </summary>
+ <param name="FileList">ファイル名文字列が格納されたArrayList。</param>
+ <param name="ListFileName">書き出し先ファイル名</param>
+ <remarks>
+ </remarks>
+ <history>
+ 	[yamane]	2007/10/02	Created 
+ </history></member>
+    <member name="M:.MainClass.ListUpFileNames(System.IO.DirectoryInfo)">
+      <summary>
+ 指定されたフォルダにあるファイル名一覧をArrayListで返す。 
+ </summary>
+ <param name="TargetDirectory" />
+ <param name="TargetFileName" />
+ <returns />
+ <remarks>
+ </remarks>
+ <history>
+ 	[yamane]	2007/08/16	Created 
+     [yamane]    2007/10/02  FilePropertyCheckerのソースから移植。 
+     [yamane]    2008/04/02  全ファイル対象バージョンへの改造に伴い、対象ファイル名 
+                             に関する引数を除去。 
+ </history></member>
+    <member name="M:.MainClass.ListUpFileInDir(System.IO.DirectoryInfo)">
+      <summary>
+ 指定されたDirectoryInfoに含まれるファイル名一覧を取得する 
+ </summary>
+ <param name="TargetDirectory" />
+ <param name="TargetFileName" />
+ <returns />
+ <remarks>
+ </remarks>
+ <history>
+ 	[yamane]	2007/08/16	Created 
+     [yamane]    2007/10/02  FilePropertyCheckerのソースから移植。 
+                             拡張子指定を取り除く。特定ファイル名のフルパスだけ抽出するよう改造。 
+     [yamane]    2008/04/02  さらに全ファイル取得バージョンに改造。ファイル名条件、引数を除去。 
+ </history></member>
+    <member name="T:.ParameterInfo">
+      <summary>
+ 起動引数情報の抽出と保持を行うクラス。 
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[yamane]	2007/10/02	Created 
+ </history></member>
+    <member name="M:.ParameterInfo.ExtractParameters(System.String[])">
+      <summary>
+ 起動引数文字列配列を渡すと、その内容をプロパティに転記するメソッド。 
+ </summary>
+ <param name="cmdArgs" />
+ <remarks>
+ </remarks>
+ <history>
+ 	[yamane]	2007/10/02	Created 
+     [yamane]    2008/04/02  ファイル名特定用引数に関する処理を除去。 
+ </history></member>
+    <member name="M:.ParameterInfo.Clear">
+      <summary>
+ プロパティをString.Emptyで初期化するメソッド。 
+ </summary>
+ <remarks>
+ </remarks>
+ <history>
+ 	[yamane]	2007/10/02	Created 
+     [yamane]    2008/04/02  対象ファイル名に関する変数(_FileName)の初期化処理を 
+                             除去。 
+ </history></member>
+    <member name="P:.ParameterInfo.FolderName">
+      <summary>
+ 処理対象ルートフォルダ名文字列プロパティ。 
+ </summary>
+ <value />
+ <remarks>
+ </remarks>
+ <history>
+ 	[yamane]	2007/10/02	Created 
+ </history></member>
+    <member name="P:.ParameterInfo.ResultFileName">
+      <summary>
+ リストアップ結果出力ファイル名文字列プロパティ。 
+ </summary>
+ <value />
+ <remarks>
+ </remarks>
+ <history>
+ 	[yamane]	2007/10/02	Created 
+ </history></member>
+  </members>
+</doc>
